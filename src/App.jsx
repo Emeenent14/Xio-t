@@ -1,18 +1,16 @@
-import './App.css';
-import { SlidersVertical, RefreshCw, Users, ShieldUser } from 'lucide-react';
-
+import { SlidersVertical, RefreshCw, Users, Shield } from 'lucide-react';
 
 function App() {
   return (
     <div className="flex flex-col md:flex-row w-screen min-h-screen">
-    {/* Left */}
-    <div className="flex items-center justify-center w-full md:w-[35%] bg-white ">
-      <img
-        src="/Image 3 (1).png"
-        alt="logo xio"
-        className="w-[90%] max-w-[400px] object-contain"
-      />
-    </div>
+      {/* Left */}
+      <div className="flex items-center justify-center w-full md:w-[35%] bg-white pt-8 md:pt-0">
+        <img
+          src="/Image 3 (1).png"
+          alt="logo xio"
+          className="w-[90%] max-w-[400px] object-contain"
+        />
+      </div>
 
       {/* Right Side - Content */}
       <div className="flex-1 bg-white font-mono">
@@ -33,7 +31,7 @@ function App() {
 
           {/* Feature Row 1 */}
           <section className="flex flex-col md:flex-row py-3">
-            <div className="flex-1 py-[18px] px-[20px] border-t border-[#BB304F]">
+            <div className="flex-1 py-[18px] px-[20px] border-t md:border-t border-[#BB304F]">
               <SlidersVertical className="text-[#BB304F] w-6 h-7 mb-3" />
               <h2 className="text-xl font-[18px] mb-2">White-Labeled</h2>
               <p className="font-jakarta font-normal tracking-[0.13px] text-gray-700">
@@ -41,9 +39,9 @@ function App() {
                 company's branding and identity.
               </p>
             </div>
-            <div className="flex-1 py-[18px] px-[20px] border-t border-l border-[#BB304F]">
+            <div className="flex-1 py-[18px] px-[20px] border-t md:border-t md:border-l border-[#BB304F]">
               <RefreshCw className="text-[#BB304F] w-6 h-7 mb-3" />
-              <h2 className="text-xl font-[18px]  mb-2">Ecosystem</h2>
+              <h2 className="text-xl font-[18px] mb-2">Ecosystem</h2>
               <p className="font-jakarta font-normal tracking-[0.13px] text-gray-700">
                 Adapt features and designs to fit your organization's workflow
                 without breaking security.
@@ -52,8 +50,8 @@ function App() {
           </section>
 
           {/* Center Image */}
-          <section className="flex justify-center py-1 ">
-            <div className="w-[300px] h-[300px] ">
+          <section className="flex justify-center py-1">
+            <div className="w-[300px] h-[300px]">
               <img
                 src="/Frame 1000001711.png"
                 alt="Hexagon"
@@ -64,16 +62,16 @@ function App() {
 
           {/* Feature Row 2 */}
           <section className="flex flex-col md:flex-row py-3">
-            <div className="flex-1 py-[18px] px-[20px] border-b border-[#BB304F]">
+            <div className="flex-1 py-[18px] px-[20px] border-b md:border-b border-[#BB304F]">
               <Users className="text-[#BB304F] w-6 h-7 mb-3" />
-              <h2 className="text-xl font-[18px]  mb-2">Multi-user</h2>
+              <h2 className="text-xl font-[18px] mb-2">Multi-user</h2>
               <p className="font-jakarta font-normal tracking-[0.13px] text-gray-700">
                 Xio supports multiple users on the same server, ensuring complete 
                 isolation between tenants.
               </p>
             </div>
-            <div className="flex-1 py-[18px] px-[20px] border-b border-l border-[#BB304F]">
-              <ShieldUser className="text-[#BB304F] w-6 h-7 mb-3" />
+            <div className="flex-1 py-[18px] px-[20px] border-b md:border-b md:border-l border-[#BB304F]">
+              <Shield className="text-[#BB304F] w-6 h-7 mb-3" />
               <h2 className="text-xl font-[18px] mb-2">Admin Control</h2>
               <p className="font-jakarta font-normal tracking-[0.13px] text-gray-700">
                 Fine-grained admin controls allow you to regulate what your 
